@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Armanul144894
-- 👀 I’m interested in ...programing
+- 👀 I’m interested in ...programming
 - 🌱 I’m currently learning ...python
 - 💞️ I’m looking to collaborate on ...web developing
 - 📫 How to reach me ...
