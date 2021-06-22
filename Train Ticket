@@ -1,0 +1,40 @@
+class Train:
+    tName = "BANALATA"
+    t1Name = "PADMA"
+    a = 25
+    b = 25
+    c = 25
+    d = 25
+    oT = 35
+    def BuyTicket(self, T , C, Time,sRange,Phn):
+        self.T = T
+        self.C = C
+        self.Time = Time
+        self.sRange = sRange
+        self.Phn = Phn
+
+    def display(self):
+        if self.Time == "8.00 am to 11.00 pm":
+            print("Congratulation! Your ticket/s are booked successfully.")
+            print(f"Train: {self.T}")
+            print(f"Coach: {self.C}")
+            print(f"Seat Range:\n{self.sRange}")
+            print(f"Phone No.: {self.Phn}")
+        elif self.Time != "8.00 am to 11.00 pm":
+            print("Not Available At This Time.")
+
+
+
+list = []
+train = Train()
+train.BuyTicket("BANALATA", "A", "8.00 am to 11.00 pm", "1,2,3","01700-000000")
+list.append(train)
+train1 = Train()
+train1.BuyTicket("Padma", "B", "8.00 am to 11.00 pm", "4,5,6","01700-000555")
+list.append(train1)
+train2 = Train()
+train2.BuyTicket("Padma", "B", "12.00 am to 8.00 am", "4,5,6","01700-000555")
+list.append(train2)
+for t in list:
+    t.display()
+    print()
