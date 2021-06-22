@@ -1,0 +1,69 @@
+class Employee:
+    def __init__(self, nid, firstName, lastName, phn):
+        self.nid = nid
+        self.firstName = firstName
+        self.lastName = lastName
+        self.phn = phn
+    def display(self):
+        print(f"Nid : {self.nid}")
+        print(f'Name : {self.firstName}{self.lastName}')
+        print(f'Phone : {self.phn}')
+        print()
+
+
+class Inventory:
+    def __init__(self, pNumber, pName, pPrice, pQuantity, pStatus):
+        self.pNumber = pNumber
+        self.pName = pName
+        self.pPrice = pPrice
+        self.pQuantity = pQuantity
+        self.pStatus = pStatus
+    def display(self):
+        print(f"Product Number : {self.pNumber}")
+        print(f"Product Name : {self.pName}")
+        print(f"Product Price : {self.pPrice}")
+        print(f"Product Quantity : {self.pQuantity}")
+        print(f"Product Status : {self.pStatus}")
+        print()
+
+
+class Customer():
+    def __init__(self, firstName, middleName ,lastName, phn, address):
+        self.firstName = firstName
+        self.middleName = middleName
+        self.lastName = lastName
+        self.phn  = phn
+        self.address = address
+    def display(self):
+        print(f"Name : {self.firstName}{self.middleName}{self.lastName}")
+        print(f'Phone Number :{self.phn}')
+        print(f'Address : {self.address}')
+        print()
+emp = []
+inv = []
+cus = []
+employee = Employee("81114784","Jhon","Waker","+6184384")
+employee1 = Employee("81118765","Tom","Jerry","+61234535")
+emp.append(employee)
+emp.append(employee1)
+print("Employee Information : ")
+for e in emp:
+    e.display()
+print()
+print()
+c1 = Customer("Tom", "Wilian", "Hardy", "+94833993", "102,Walker Street,England")
+c2 = Customer("Jhon", "Kan", "Cena", "+948339434", "102,Hudson,Australia")
+cus.append(c1)
+cus.append(c2)
+print("Customer Information : ")
+for c in cus:
+    c.display()
+print()
+print()
+i = Inventory("101", "Gear", "12000Tk", "30", "Repair cost = 500 Tk, Exchange cost = 500 Tk")
+i1 = Inventory("102", "Breaker", "3000 Tk", "30", "Repair cost = 400 Tk, Exchange cost = 500 Tk")
+inv.append(i)
+inv.append(i1)
+print("Product Information : ")
+for v in inv:
+    v.display()
